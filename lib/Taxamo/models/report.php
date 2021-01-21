@@ -32,8 +32,11 @@ class Report {
       'amount' => 'number',
       'tax_amount' => 'number',
       'tax_rate' => 'number',
-      'country_name' => 'string'
-
+      'country_name' => 'string',
+      'refunded_tax_amount' => 'number',
+      'final_amount' => 'number',
+      'refunded_amount' => 'number',
+      'final_tax_amount' => 'number',
     );
 
   /**
@@ -72,5 +75,13 @@ class Report {
   * Country name
   */
   public $country_name; // string
+
+  public $refunded_tax_amount; // number
+
+  public $final_amount; // number
+
+  public $refunded_amount; // number
+
+  public $final_tax_amount; // number
   }
 
